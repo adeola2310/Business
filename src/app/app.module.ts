@@ -5,6 +5,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SanitizeHtmlPipe } from './shared/pipes/sanitize-html.pipe';
 import { CoreModule } from './shared/modules/core.module';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { OwlModule } from 'ngx-owl-carousel';
 import { SliderComponent } from './shared/components/slider/slider.component';
 
@@ -24,7 +25,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     OwlModule,
-    CoreModule.forRoot()
+    CoreModule.forRoot(),
+    ScrollToModule.forRoot(),
   ],
   providers: [SanitizeHtmlPipe],
   bootstrap: [AppComponent]

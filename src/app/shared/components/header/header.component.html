@@ -9,8 +9,8 @@
       <!-- Logo
       ============================================= -->
       <div id="logo">
-        <a href="index.html" class="standard-logo" data-dark-logo="../../assets/images/logo-dark.png"><img src="../../../assets/images/logo.png" alt="Canvas Logo"></a>
-        <a href="index.html" class="retina-logo" data-dark-logo="../../assets/images/logo-dark@2x.png"><img src="../../assets/images/logo@2x.png" alt="Canvas Logo"></a>
+        <a href="index.html" class="standard-logo" data-dark-logo="assets/images/logo-dark.png"><img src="../../../assets/images/logo.png" alt="Canvas Logo"></a>
+        <a href="index.html" class="retina-logo" data-dark-logo="assets/images/logo-dark@2x.png"><img src="../../assets/images/logo@2x.png" alt="Canvas Logo"></a>
       </div><!-- #logo end -->
 
       <!-- Primary Navigation
@@ -19,11 +19,12 @@
 
         <ul>
           <li class="active"><a href="#"><div>Home</div></a></li>
-          <li><a href="#"><div>Explore</div></a>
+          <li><a href="javascript:void(0)" [ngx-scroll-to]="'about'"><div>About Us</div></a>
           </li>
-          <li><a href="#"><div>Pricing</div></a></li>
-          <li><a href="#"><div>FAQs</div></a></li>
-          <li><a href="#"><div>Gallery</div></a></li>
+          <li><a href="javascript:void(0)" [ngx-scroll-to]="'product'"><div>Products</div></a></li>
+          <li><a href="javascript:void(0)" [ngx-scroll-to]="'service'"><div>Services</div></a></li>
+          <li><a href="javascript:void(0)" [ngx-scroll-to]="'testimony'"><div>Testimonies</div></a></li>
+          <li><a href="javascript:void(0)" [ngx-scroll-to]="'gallery'"><div>Gallery</div></a></li>
         </ul>
 
         <!-- Top Search
